@@ -51,4 +51,14 @@ describe("Given a compare function", () => {
       expect(equality).toBe(isEqual);
     });
   });
+  describe("When it receives true and false", () => {
+    test("Then it should return false", () => {
+      const valueA = NaN;
+      const valueB = NaN;
+      const equality = strictEquals(valueA, valueB);
+      const isEqual = false;
+
+      expect(equality).toBe(isEqual);
+    });
+  });
 });
