@@ -41,4 +41,14 @@ describe("Given a compare function", () => {
       expect(equality).toBe(isEqual);
     });
   });
+  describe("When it receives true and false", () => {
+    test("Then it should return false", () => {
+      const valueA = "Water";
+      const valueB = "Oil";
+      const equality = strictEquals(valueA, valueB);
+      const isEqual = false;
+
+      expect(equality).toBe(isEqual);
+    });
+  });
 });
