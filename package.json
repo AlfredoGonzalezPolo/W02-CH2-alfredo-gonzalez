@@ -16,5 +16,14 @@
   },
   "dependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.21.5"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
   }
 }
